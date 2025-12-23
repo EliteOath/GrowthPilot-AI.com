@@ -278,6 +278,9 @@ importers:
       vite-plugin-manus-runtime:
         specifier: ^0.0.56
         version: 0.0.56
+      vite-plugin-sitemap:
+        specifier: ^0.8.2
+        version: 0.8.2
       vitest:
         specifier: ^2.1.4
         version: 2.1.9(@types/node@24.10.4)(lightningcss@1.30.2)
@@ -4448,6 +4451,9 @@ packages:
 
   vite-plugin-manus-runtime@0.0.56:
     resolution: {integrity: sha512-BkRMoFzUtT5enXBl+PO0h81KH+4uK4WpLGOp1tvljafb6fp9UX0b1klfxQz9QZFEdB8IPQTEkNzfqv09fHrkMw==}
+
+  vite-plugin-sitemap@0.8.2:
+    resolution: {integrity: sha512-bqIw6NVOXg6je81lzX8Lm0vjf8/QSAp8di8fYQzZ3ZdVicOm8+6idBGALJiy1R1FiXNIK8rgORO6HBqXyHW+iQ==}
 
   vite@5.4.21:
     resolution: {integrity: sha512-o5a9xKjbtuhY6Bi5S3+HvbRERmouabWbyUcpXXUA1u+GNUKoROi9byOJ8M0nHbHYHkYICiMlqxkg1KkYmm25Sw==}
@@ -9396,6 +9402,8 @@ snapshots:
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
       tailwind-merge: 3.4.0
+
+  vite-plugin-sitemap@0.8.2: {}
 
   vite@5.4.21(@types/node@24.10.4)(lightningcss@1.30.2):
     dependencies:

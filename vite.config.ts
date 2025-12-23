@@ -5,12 +5,16 @@ import fs from "node:fs";
 import path from "path";
 import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
-
+import sitemap from 'vite-plugin-sitemap'
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
-  plugins,
+  plugins: [
+    sitemap({ 
+      hostname: 'https://growthpilot-ai.com' 
+    })
+  ],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),

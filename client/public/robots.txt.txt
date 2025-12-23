@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://growthpilot-ai.com/sitemap.xml
