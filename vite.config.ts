@@ -7,14 +7,12 @@ import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 import sitemap from 'vite-plugin-sitemap'
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
-
-export default defineConfig({
-  plugins: [
-    sitemap({ 
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), sitemap({ 
       hostname: 'https://growthpilot-ai.com' 
-    })
-  ],
+    }),
+  ]
+export default defineConfig({
+  plugins,
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
