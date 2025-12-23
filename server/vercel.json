@@ -1,10 +1,13 @@
 {
+  "builds": [
+    { "src": "server/dist/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "server/dist/index.js" }
+  ],
   "functions": {
-    "api/trpc.ts": {
+    "server/dist/index.js": {
       "runtime": "nodejs20.x"
     }
-  },
-  "routes": [
-    { "src": "/trpc/(.*)", "dest": "/api/trpc.ts" }
-  ]
+  }
 }
