@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/trpc.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    { "src": "/trpc/(.*)", "dest": "/api/trpc.ts" }
+  ]
+}
