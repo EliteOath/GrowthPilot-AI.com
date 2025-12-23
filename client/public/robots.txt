@@ -1,0 +1,23 @@
+# GrowthPilot AI - robots.txt
+# Allows search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /account
+Disallow: /api
+
+# Sitemap location
+Sitemap: https://growthpilot-ai.com/sitemap.xml
+Sitemap: https://growthpilot-ai.com/sitemap-blog.xml
+
+# Google-specific directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing-specific directives
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
