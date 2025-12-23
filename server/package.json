@@ -4,7 +4,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "dev": "tsx watch _core/index.ts", 
+    "build": "tsc", 
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@trpc/server": "^11.6.0",
@@ -25,5 +27,12 @@
 
     "cookie": "^1.0.2",
     "nanoid": "^5.1.5"
+  },
+  "devDependencies": { 
+    "typescript": "5.9.3", 
+    "tsx": "^4.19.1" 
+  }, 
+  "engines": { 
+    "node": "20"
   }
 }
